@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            background-attachment: fixed;
+            align-items: center;
+            background: url("background.jpg");
+        }
+
+        .form-container form {
+            width: 500px;
+            height: 500px;
+            justify-content: center;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(30px);
+            flex-wrap: wrap;
+            position: relative;
+            left: 16%;
+        }
+
+        .form-container form h2 {
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            margin-left: 100px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        .move_up {
+            position: relative;
+            top: -100px;
+            right: -150px;
+        }
+
+        .home {
+            width: 150px;
+            display: flex;
+            align-items: normal;
+            justify-content: left;
+            background: beige;
+            padding: 10px;
+            color: black;
+            border-radius: 6px;
+            margin-bottom: 0%;
+            position: relative;
+            top: -320px;
+            right: 720px;
+        }
+
+        .contact {
+            width: 370px;
+            display: flex;
+            align-items: normal;
+            justify-content: left;
+            background: beige;
+            padding: 10px;
+            color: black;
+            border-radius: 6px;
+            margin-bottom: 0%;
+            position: relative;
+            top: -320px;
+            left: 220px;
+
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 90%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 25px;
+            position: relative;
+            top: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Register</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+
+            <div class="move_up">
+                <label>Interests:</label>
+                <label><input type="checkbox" name="interests" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="interests" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="interests" value="Python"> Python</label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+        <a href="index.html" class="home">← Back to home</a>
+        <p class="contact">if you have faced any problem please <a href="contact.html">contact us</a> </p>
+    </div>
+
+
+</body>
+
+</html>
